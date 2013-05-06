@@ -1,0 +1,27 @@
+html
+    head
+        title HackerCookie
+        link(rel="stylesheet",type="text/css",href="./css/style.css")
+        script(src="http://cdn.menkr.com/lib/jquery.1.9.1.min.js")
+        script(src="http://cdn.menkr.com/lib/mustache.js")
+        script(src="http://cdn.menkr.com/lib/underscore.min.js")
+        script(src="./js/home.js")
+    body
+        #main.clearfix
+            .left
+                h1 Hacker Cookie
+                .nav.clearfix
+                    ul.clearfix
+                        li.yc: a(href="#",id="hackerNews") Hacker News
+                            i.icon-exchange
+                        li.sn: a(href="#",id="startupNews") Startup News
+                            i.icon-exchange
+                    .copyright.clearfix
+                        .slogan
+                            p Read / Share / Coding Together
+                        .github 
+                            //- iframe(src="http://ghbtns.com/github-btn.html?user=turingou&repo=HackerCookie&type=watch&count=true",allowtransparency="true",frameborder="0",scrolling="0",width="110",height="20")
+                        .author GuoYu &copy; 2013
+            .right
+                .container.clearfix
+                    .error 加载失败，请稍后再试试看......
